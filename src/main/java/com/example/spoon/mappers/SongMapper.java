@@ -2,7 +2,6 @@ package com.example.spoon.mappers;
 
 
 import com.example.spoon.dtos.SongDTO;
-
 import com.example.spoon.entities.Song;
 import org.mapstruct.Mapper;
 

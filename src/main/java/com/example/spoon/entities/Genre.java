@@ -12,6 +12,7 @@ public enum Genre {
     COUNTRY,
     REGGAE,
     METAL,
+    FUNK,
     INDIE,
     OTHER
 }

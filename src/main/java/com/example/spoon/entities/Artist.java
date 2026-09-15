@@ -3,7 +3,7 @@ package com.example.spoon.entities;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "artist", schema = "musicdb")
+@Table(name = "artist")
 public class Artist {
 
     @Id

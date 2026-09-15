@@ -1,3 +1,5 @@
+package com.example.spoon.entities;
+
 import com.example.spoon.entities.Album;
 import com.example.spoon.entities.Artist;
 import com.example.spoon.entities.Genre;
@@ -10,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "songs", schema = "musicdb")
+@Table(name = "songs")
 public class Song {
 
     @Id
@@ -35,7 +37,6 @@ public class Song {
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
             name = "song_artists",
-            schema = "musicdb",
             joinColumns = @JoinColumn(name = "song_id"),
             inverseJoinColumns = @JoinColumn(name = "artist_id")
     )
@@ -44,7 +45,6 @@ public class Song {
     @ElementCollection
     @CollectionTable(
             name = "song_genres",
-            schema = "musicdb",
             joinColumns = @JoinColumn(name = "song_id")
     )
     @Enumerated(EnumType.STRING)

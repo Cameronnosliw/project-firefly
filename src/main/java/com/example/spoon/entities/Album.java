@@ -8,7 +8,7 @@ import org.hibernate.annotations.OnDeleteAction;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "album", schema = "musicdb")
+@Table(name = "album")
 public class Album {
 
     @Id
