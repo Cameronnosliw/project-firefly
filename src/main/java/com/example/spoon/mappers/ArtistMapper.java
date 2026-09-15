@@ -1,4 +1,4 @@
 package com.example.spoon.mappers;
 
-public class ArtistMapper {
+public interface ArtistMapper {
 }
