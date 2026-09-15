@@ -1,5 +1,6 @@
-package com.example.spoon.entities;
-
+import com.example.spoon.entities.Album;
+import com.example.spoon.entities.Artist;
+import com.example.spoon.entities.Genre;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import org.hibernate.annotations.OnDelete;
@@ -16,6 +17,10 @@ public class Song {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "song_id", nullable = false)
     private Integer id;
+
+    @NotNull
+    @Column(name = "song_name", nullable = false)
+    private String songName;
 
     @NotNull
     @Column(name = "duration", nullable = false)
@@ -43,7 +48,7 @@ public class Song {
             joinColumns = @JoinColumn(name = "song_id")
     )
     @Enumerated(EnumType.STRING)
-    @Column(name = "genre")
+    @Column(name = "genre", nullable = false)
     private List<Genre> genres = new ArrayList<>();
 
 
@@ -53,6 +58,14 @@ public class Song {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String getSongName() {
+        return songName;
+    }
+
+    public void setSongName(String songName) {
+        this.songName = songName;
     }
 
     public Integer getDuration() {
