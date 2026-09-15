@@ -1,4 +1,89 @@
 package com.example.spoon.entities;
 
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@Entity
+@Table(name = "songs", schema = "musicdb")
 public class Song {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "song_id", nullable = false)
+    private Integer id;
+
+    @NotNull
+    @Column(name = "duration", nullable = false)
+    private Integer duration;
+
+    @NotNull
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    @JoinColumn(name = "album_id", nullable = false)
+    private Album album;
+
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(
+            name = "song_artists",
+            schema = "musicdb",
+            joinColumns = @JoinColumn(name = "song_id"),
+            inverseJoinColumns = @JoinColumn(name = "artist_id")
+    )
+    private List<Artist> artists = new ArrayList<>();
+
+    @ElementCollection
+    @CollectionTable(
+            name = "song_genres",
+            schema = "musicdb",
+            joinColumns = @JoinColumn(name = "song_id")
+    )
+    @Enumerated(EnumType.STRING)
+    @Column(name = "genre")
+    private List<Genre> genres = new ArrayList<>();
+
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getDuration() {
+        return duration;
+    }
+
+    public void setDuration(Integer duration) {
+        this.duration = duration;
+    }
+
+    public Album getAlbum() {
+        return album;
+    }
+
+    public void setAlbum(Album album) {
+        this.album = album;
+    }
+
+    public List<Artist> getArtists() {
+        return artists;
+    }
+
+    public void setArtists(List<Artist> artists) {
+        this.artists = artists;
+    }
+
+    public List<Genre> getGenres() {
+        return genres;
+    }
+
+    public void setGenres(List<Genre> genres) {
+        this.genres = genres;
+    }
 }
