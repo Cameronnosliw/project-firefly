@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 @RestController
-@RequestMapping("/api/songs")
+@RequestMapping({"/api/songs","/songs"})
 public class SongController {
 
     private final SongService songService;

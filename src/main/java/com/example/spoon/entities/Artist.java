@@ -29,4 +29,8 @@ public class Artist {
     public void setArtistName(String artistName) {
         this.artistName = artistName;
     }
+
+    public Artist() {
+    }
+
 }
