@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 @RestController
-@RequestMapping({"/api/artists", "/artists"})
+@RequestMapping( "/artists")
 public class ArtistController {
 
     private final ArtistService artistService;
