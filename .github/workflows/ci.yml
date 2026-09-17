@@ -37,4 +37,11 @@ jobs:
           cache: maven
 
       - name: Build and test with Maven
+        env:
+          SPRING_DATASOURCE_URL: jdbc:mysql://localhost:3306/spoondb?createDatabaseIfNotExist=true
+          SPRING_DATASOURCE_USERNAME: root
+          SPRING_DATASOURCE_PASSWORD: root
+          SPRING_JPA_HIBERNATE_DDL_AUTO: update
+          SPRING_JPA_DEFER_DATASOURCE_INITIALIZATION: "true"
+          SPRING_SQL_INIT_MODE: always
         run: ./mvnw -B verify
