@@ -3,6 +3,7 @@
 -- INSERT IGNORE prevents duplicate primary-key / join-table rows on restart.
 -- Existing rows with the same IDs are left unchanged.
 
+
 INSERT IGNORE INTO artist (artist_id, artist_name) VALUES
 (1,'Bruno Mars'),(2,'Lady Gaga'),(3,'The Weeknd'),(4,'Dua Lipa'),
 (5,'Ed Sheeran'),(6,'Ariana Grande'),(7,'Drake'),(8,'Billie Eilish'),
