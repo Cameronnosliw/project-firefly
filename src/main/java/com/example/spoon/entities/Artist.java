@@ -12,7 +12,7 @@ public class Artist {
     private Integer id;
 
     @Column(name = "artist_name", nullable = false)
-    private String artistName;
+    private String name;
 
     public Integer getId() {
         return id;
@@ -22,12 +22,12 @@ public class Artist {
         this.id = id;
     }
 
-    public String getArtistName() {
-        return artistName;
+    public String getName() {
+        return name;
     }
 
-    public void setArtistName(String artistName) {
-        this.artistName = artistName;
+    public void setName(String artistName) {
+        this.name = name;
     }
 
     public Artist() {

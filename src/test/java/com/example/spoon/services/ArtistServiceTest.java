@@ -33,7 +33,7 @@ public class ArtistServiceTest {
         artistService = new ArtistService(artistRepository, artistMapper);
         artist = new Artist();
         artist.setId(1);
-        artist.setArtistName("Test Artist");
+        artist.setName("Test Artist");
         artistDTO = artistMapper.toDTO(artist);
     }
 

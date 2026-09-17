@@ -22,7 +22,7 @@ public class Song {
 
     @NotNull
     @Column(name = "song_name", nullable = false)
-    private String songName;
+    private String title;
 
     @NotNull
     @Column(name = "duration", nullable = false)
@@ -64,12 +64,12 @@ public class Song {
         this.id = id;
     }
 
-    public String getSongName() {
-        return songName;
+    public String getTitle() {
+        return title;
     }
 
-    public void setSongName(String songName) {
-        this.songName = songName;
+    public void setTitle(String songName) {
+        this.title = title;
     }
 
     public Integer getDuration() {
