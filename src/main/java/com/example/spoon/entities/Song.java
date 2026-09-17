@@ -68,7 +68,7 @@ public class Song {
         return title;
     }
 
-    public void setTitle(String songName) {
+    public void setTitle(String title) {
         this.title = title;
     }
 

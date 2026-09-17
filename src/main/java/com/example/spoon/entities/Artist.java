@@ -26,7 +26,7 @@ public class Artist {
         return name;
     }
 
-    public void setName(String artistName) {
+    public void setName(String name) {
         this.name = name;
     }
 

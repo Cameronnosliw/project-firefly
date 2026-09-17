@@ -4,10 +4,12 @@ import com.example.spoon.entities.Artist;
 import com.example.spoon.repositories.ArtistRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+@Configuration
 public class AppConfig implements WebMvcConfigurer {
 
     @Override
