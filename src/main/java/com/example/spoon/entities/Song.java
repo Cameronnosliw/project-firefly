@@ -28,6 +28,10 @@ public class Song {
     @Column(name = "duration", nullable = false)
     private Integer duration;
 
+//    @NotNull
+    @Column(name = "audio_path")
+    private String audioPath;
+
     @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
@@ -75,6 +79,10 @@ public class Song {
     public void setDuration(Integer duration) {
         this.duration = duration;
     }
+
+    public String getAudioPath() { return audioPath; }
+
+    public void setAudioPath(String audioPath) { this.audioPath = audioPath; }
 
     public Album getAlbum() {
         return album;
