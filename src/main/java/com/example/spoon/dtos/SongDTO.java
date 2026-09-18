@@ -11,10 +11,11 @@ public class SongDTO {
     private Integer albumId;
     private String albumTitle;
     private Set<String> genres;
+    private String audioPath;
 
     public SongDTO() {}
 
-    public SongDTO(Integer id, String title, Integer duration, Integer artistId, String artistName, Integer albumId, String albumTitle, Set<String> genres) {
+    public SongDTO(Integer id, String title, Integer duration, Integer artistId, String artistName, Integer albumId, String albumTitle, Set<String> genres, String audioPath) {
         this.id = id;
         this.title = title;
         this.duration = duration;
@@ -23,6 +24,7 @@ public class SongDTO {
         this.albumId = albumId;
         this.albumTitle = albumTitle;
         this.genres = genres;
+        this.audioPath = audioPath;
     }
 
     public Integer getId() {
@@ -87,6 +89,14 @@ public class SongDTO {
 
     public void setGenres(Set<String> genres) {
         this.genres = genres;
+    }
+
+    public String getAudioPath() {
+        return audioPath;
+    }
+
+    public void setAudioPath(String audioPath) {
+        this.audioPath = audioPath;
     }
 }
 
