@@ -81,3 +81,27 @@ INSERT IGNORE INTO song_genres (song_id, genre) VALUES
 (30,'RAP'),(30,'HIP_HOP'),(31,'RAP'),(31,'HIP_HOP'),
 (32,'RAP'),(32,'RNB'),(33,'POP'),(33,'RNB'),
 (34,'RAP'),(34,'RNB'),(35,'RAP'),(35,'HIP_HOP');
+
+UPDATE songs SET audio_path = 'https://pub-151a7e25324b4382a57d6e4d46eb7916.r2.dev/song-1.mp3' WHERE song_id = 1;
+UPDATE songs SET audio_path = 'https://pub-151a7e25324b4382a57d6e4d46eb7916.r2.dev/song-2.mp3' WHERE song_id = 2;
+UPDATE songs SET audio_path = 'https://pub-151a7e25324b4382a57d6e4d46eb7916.r2.dev/song-3.mp3' WHERE song_id = 3;
+UPDATE songs SET audio_path = 'https://pub-151a7e25324b4382a57d6e4d46eb7916.r2.dev/song-4.mp3' WHERE song_id = 4;
+UPDATE songs SET audio_path = 'https://pub-151a7e25324b4382a57d6e4d46eb7916.r2.dev/song-5.mp3' WHERE song_id = 5;
+UPDATE songs SET audio_path = 'https://pub-151a7e25324b4382a57d6e4d46eb7916.r2.dev/song-6.mp3' WHERE song_id = 6;
+UPDATE songs SET audio_path = 'https://pub-151a7e25324b4382a57d6e4d46eb7916.r2.dev/song-7.mp3' WHERE song_id = 7;
+UPDATE songs SET audio_path = 'https://pub-151a7e25324b4382a57d6e4d46eb7916.r2.dev/song-8.mp3' WHERE song_id = 8;
+UPDATE songs SET audio_path = 'https://pub-151a7e25324b4382a57d6e4d46eb7916.r2.dev/song-9.mp3' WHERE song_id = 9;
+UPDATE songs SET audio_path = 'https://pub-151a7e25324b4382a57d6e4d46eb7916.r2.dev/song-10.mp3' WHERE song_id = 10;
+UPDATE songs SET audio_path = 'https://pub-151a7e25324b4382a57d6e4d46eb7916.r2.dev/song-11.mp3' WHERE song_id = 11;
+UPDATE songs SET audio_path = 'https://pub-151a7e25324b4382a57d6e4d46eb7916.r2.dev/song-12.mp3' WHERE song_id = 12;
+UPDATE songs SET audio_path = 'https://pub-151a7e25324b4382a57d6e4d46eb7916.r2.dev/song-13.mp3' WHERE song_id = 13;
+UPDATE songs SET audio_path = 'https://pub-151a7e25324b4382a57d6e4d46eb7916.r2.dev/song-14.mp3' WHERE song_id = 14;
+UPDATE songs SET audio_path = 'https://pub-151a7e25324b4382a57d6e4d46eb7916.r2.dev/song-15.mp3' WHERE song_id = 15;
+UPDATE songs SET audio_path = 'https://pub-151a7e25324b4382a57d6e4d46eb7916.r2.dev/song-16.mp3' WHERE song_id = 16;
+UPDATE songs SET audio_path = 'https://pub-151a7e25324b4382a57d6e4d46eb7916.r2.dev/song-17.mp3' WHERE song_id = 17;
+UPDATE songs SET audio_path = 'https://pub-151a7e25324b4382a57d6e4d46eb7916.r2.dev/song-18.mp3' WHERE song_id = 18;
+UPDATE songs SET audio_path = 'https://pub-151a7e25324b4382a57d6e4d46eb7916.r2.dev/song-19.mp3' WHERE song_id = 19;
+UPDATE songs SET audio_path = 'https://pub-151a7e25324b4382a57d6e4d46eb7916.r2.dev/song-20.mp3' WHERE song_id = 20;
+UPDATE songs SET audio_path = 'https://pub-151a7e25324b4382a57d6e4d46eb7916.r2.dev/song-21.mp3' WHERE song_id = 21;
+UPDATE songs SET audio_path = 'https://pub-151a7e25324b4382a57d6e4d46eb7916.r2.dev/song-22.mp3' WHERE song_id = 22;
+UPDATE songs SET audio_path = 'https://pub-151a7e25324b4382a57d6e4d46eb7916.r2.dev/song-23.mp3' WHERE song_id = 23;
