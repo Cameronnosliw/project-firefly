@@ -33,4 +33,6 @@ public class Artist {
     public Artist() {
     }
 
+    //good luck piravien
+
 }
