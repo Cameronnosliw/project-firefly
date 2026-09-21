@@ -1,3 +1,21 @@
+## Test Report
+
+<!-- TEST-REPORT:START -->
+✅ **All tests passing** — 53 tests, 0 failures, 0 errors, 0 skipped
+
+| Test Class | Tests | Failures | Errors | Skipped | Time |
+|---|---|---|---|---|---|
+| ✅ com.example.spoon.SpoonprojectApplicationTests | 1 | 0 | 0 | 0 | 24.954s |
+| ✅ com.example.spoon.controllers.AlbumControllerTest | 8 | 0 | 0 | 0 | 4.345s |
+| ✅ com.example.spoon.controllers.ArtistControllerTest | 8 | 0 | 0 | 0 | 0.446s |
+| ✅ com.example.spoon.controllers.SongControllerTest | 10 | 0 | 0 | 0 | 0.192s |
+| ✅ com.example.spoon.services.AlbumServiceTest | 8 | 0 | 0 | 0 | 0.762s |
+| ✅ com.example.spoon.services.ArtistServiceTest | 8 | 0 | 0 | 0 | 0.183s |
+| ✅ com.example.spoon.services.SongServiceTest | 10 | 0 | 0 | 0 | 0.271s |
+
+_Last updated: 2026-09-21 10:00 UTC · commit `local`_
+<!-- TEST-REPORT:END -->
+
 ## Database Setup
 
 This project uses **MySQL** as its database.

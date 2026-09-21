@@ -4,6 +4,9 @@ on:
   push:
     branches: [ "main", "dev" ]
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -45,3 +48,23 @@ jobs:
           SPRING_JPA_DEFER_DATASOURCE_INITIALIZATION: "true"
           SPRING_SQL_INIT_MODE: always
         run: ./mvnw -B verify
+
+      - name: Generate test report
+        if: always()
+        run: |
+          chmod +x .github/scripts/generate-test-report.sh .github/scripts/update-readme.sh
+          .github/scripts/generate-test-report.sh test-report.md
+          .github/scripts/update-readme.sh test-report.md README.md
+
+      - name: Commit updated README
+        if: always() && github.event_name == 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet -- README.md; then
+            git add README.md
+            git commit -m "Update test report in README [skip ci]"
+            git push
+          else
+            echo "No change to README.md"
+          fi
