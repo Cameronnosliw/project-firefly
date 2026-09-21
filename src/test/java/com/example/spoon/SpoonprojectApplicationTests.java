@@ -9,6 +9,7 @@ class SpoonprojectApplicationTests {
 
     @Test
     @Disabled("Disabled in CI until database configuration is provided")
+    //test
     void contextLoads() {
     }
 
