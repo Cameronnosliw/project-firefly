@@ -1,19 +1,18 @@
 ## Test Report
 
 <!-- TEST-REPORT:START -->
-✅ **All tests passing** — 53 tests, 0 failures, 0 errors, 1 skipped
+✅ **All tests passing** — 52 tests, 0 failures, 0 errors, 0 skipped
 
 | Test Class | Tests | Failures | Errors | Skipped | Time |
 |---|---|---|---|---|---|
-| ✅ com.example.spoon.SpoonprojectApplicationTests | 1 | 0 | 0 | 1 | 6.341s |
-| ✅ com.example.spoon.controllers.AlbumControllerTest | 8 | 0 | 0 | 0 | 0.15s |
-| ✅ com.example.spoon.controllers.ArtistControllerTest | 8 | 0 | 0 | 0 | 0.065s |
-| ✅ com.example.spoon.controllers.SongControllerTest | 10 | 0 | 0 | 0 | 0.068s |
-| ✅ com.example.spoon.services.AlbumServiceTest | 8 | 0 | 0 | 0 | 0.115s |
-| ✅ com.example.spoon.services.ArtistServiceTest | 8 | 0 | 0 | 0 | 0.111s |
-| ✅ com.example.spoon.services.SongServiceTest | 10 | 0 | 0 | 0 | 1.064s |
+| ✅ com.example.spoon.controllers.AlbumControllerTest | 8 | 0 | 0 | 0 | 0.202s |
+| ✅ com.example.spoon.controllers.ArtistControllerTest | 8 | 0 | 0 | 0 | 0.05s |
+| ✅ com.example.spoon.controllers.SongControllerTest | 10 | 0 | 0 | 0 | 0.057s |
+| ✅ com.example.spoon.services.AlbumServiceTest | 8 | 0 | 0 | 0 | 0.121s |
+| ✅ com.example.spoon.services.ArtistServiceTest | 8 | 0 | 0 | 0 | 0.077s |
+| ✅ com.example.spoon.services.SongServiceTest | 10 | 0 | 0 | 0 | 1.018s |
 
-_Last updated: 2026-09-21 11:27 UTC · commit `7cc88b9b2bac5b88ce3e76fd34b690d07abafaec`_
+_Last updated: 2026-09-21 12:52 UTC · commit `b3f7f856992d1c41e85f6dec1e271bf7ec8c3a2f`_
 <!-- TEST-REPORT:END -->
 
 ## Database Setup
