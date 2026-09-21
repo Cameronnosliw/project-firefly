@@ -7,9 +7,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class SpoonprojectApplicationTests {
 
-    @Test
-    @Disabled("Disabled in CI until database configuration is provided")
-    void contextLoads() {
-    }
+//    @Test
+//    void contextLoads() {
+//    }
 
 }
