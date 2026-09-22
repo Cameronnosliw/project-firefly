@@ -11,20 +11,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    services:
-      mysql:
-        image: mysql:8.0
-        env:
-          MYSQL_ROOT_PASSWORD: root
-          MYSQL_DATABASE: spoondb
-        ports:
-          - 3306:3306
-        options: >-
-          --health-cmd="mysqladmin ping -h localhost -uroot -proot"
-          --health-interval=10s
-          --health-timeout=5s
-          --health-retries=10
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -40,13 +26,6 @@ jobs:
           cache: maven
 
       - name: Build and test with Maven
-        env:
-          SPRING_DATASOURCE_URL: jdbc:mysql://localhost:3306/spoondb?createDatabaseIfNotExist=true
-          SPRING_DATASOURCE_USERNAME: root
-          SPRING_DATASOURCE_PASSWORD: root
-          SPRING_JPA_HIBERNATE_DDL_AUTO: update
-          SPRING_JPA_DEFER_DATASOURCE_INITIALIZATION: "true"
-          SPRING_SQL_INIT_MODE: always
         run: ./mvnw -B verify
 
       - name: Generate test report
